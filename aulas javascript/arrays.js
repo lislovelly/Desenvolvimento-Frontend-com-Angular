@@ -1,0 +1,12 @@
+const alunos = ['vera','joao', 'fabio', 'samuel'];
+alunos.push('renan');
+alunos[5] = 'sales';
+console.log(alunos);
+alunos[2] = 'elisangela';
+console.log(alunos);
+alunos.pop();
+console.log(alunos);
+alunos.pop();
+console.log(alunos);
+alunos.shift();
+console.log(alunos);
