@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTAL DE NOTÍCIAS GALACTICA</title>
     <link rel="stylesheet" href="styles/card.css">
+    <script src="src/components/CardNews.js" defer></script>
+    <script src="src/components/TituloDinamico.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <div class="card">
-            <div class="card_left">
-                <span>By Elisangela  Mendonça</span>
-                <a href="#">Darth Varder Contrata Devs</a>
-                <p>Dart Varder procura desenvolvedores que saibam
-                    trabalhar em componentes.
-                </p>
-            </div>
-            <div class="card_rigth">
-                <img src="/assets/R.jpg" alt="Darth Varder" srcset="">
-            </div>
-        </div>
+        <card-news 
+            autor="Elisangela"
+            title="Darth Vader Contrata Devs"
+            link-url="www.google.com"
+            photo="/assets/R.jpg"
+            content="Dart Vader procura desenvolvedores que saibam
+            trabalhar em componentes.">
+        </card-news>       
     </div>
 </body>
 </html>
