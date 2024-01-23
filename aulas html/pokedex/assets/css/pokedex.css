@@ -1,62 +1,79 @@
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
-    list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .normal {
-    background-color: #a6a877 ;
-} 
+    background-color: #a6a877;
+}
+
 .grass {
     background-color: #77c850;
 }
+
 .fire {
     background-color: #ee7f30;
 }
+
 .water {
     background-color: #678fee;
 }
+
 .electric {
     background-color: #f7cf2e;
 }
+
 .ice {
     background-color: #98d5d7;
 }
+
 .ground {
     background-color: #dfbf69;
 }
+
 .flying {
     background-color: #a98ff0;
 }
+
 .poison {
     background-color: #a040a0;
 }
+
 .fighting {
     background-color: #bf3029;
 }
+
 .psychic {
     background-color: #f65687;
 }
+
 .dark {
     background-color: #725847;
 }
+
 .rock {
-    background-color: #b0a137;
+    background-color: #b8a137;
 }
+
 .bug {
     background-color: #a8b720;
 }
+
 .ghost {
     background-color: #6e5896;
 }
+
 .steel {
     background-color: #b9b7cf;
 }
+
 .dragon {
     background-color: #6f38f6;
 }
+
 .fairy {
     background-color: #f9aec7;
 }
@@ -70,7 +87,7 @@
 }
 
 .pokemon .number {
-    color: black;
+    color: #000;
     opacity: .3;
     text-align: right;
     font-size: .625rem;
@@ -79,7 +96,7 @@
 .pokemon .name {
     text-transform: capitalize;
     color: #fff;
-    margin-bottom: .25rem;    
+    margin-bottom: .25rem;
 }
 
 .pokemon .detail {
@@ -105,68 +122,22 @@
     text-align: center;
 }
 
-.pokemon .detail img{
+.pokemon .detail img {
     max-width: 100%;
     height: 70px;
 }
 
-.btn-pokemon {
-    margin-top: 0.5rem;
-    background-color: rgba(245, 245, 245, 1);
-    border: white solid 1px; 
-    border-radius: 1rem;
+.detailsButton {
+    background-color: #6e5896;
+    border: none;
+    color: #fff;
+    padding: .25rem;
+    margin: auto;
+    font-size: .625rem;
+    border-radius: 1rem;  
+    cursor: pointer;
 }
-.props {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid #ccc;
-    background-color: rgba(245, 245, 245, 1);
-    padding: 1rem;
-    margin: 1rem;
-    width: 80%;
-    height: 65%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-  }
-.content-props {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.poke-img-props {
-    width: 150px;
-    height: 150px;
-}
-.table-props {
-    margin-top: 0.5rem;
-    border-collapse: collapse;
-    width: 100%;
-}
-td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-  
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-.div-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem;
-}
-.btn-close {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    background-color: rgba(245, 245, 245, 1);
-    border: black solid 1px; 
-    border-radius: 1rem;
-}
+
 
 .pagination {
     display: flex;
