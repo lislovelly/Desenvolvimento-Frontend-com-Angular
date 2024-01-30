@@ -128,7 +128,8 @@
 }
 
 .detailsButton {
-    background-color: #6e5896;
+    background-color: #6c79db;
+    filter: brightness(1.1);
     border: none;
     color: #fff;
     padding: .25rem;

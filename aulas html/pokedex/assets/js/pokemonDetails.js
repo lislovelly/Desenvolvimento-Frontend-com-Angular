@@ -31,7 +31,8 @@ function getPokemonDetails(pokemonId) {
 
 function displayPokemonDetails(pokemonDetails) {
     const pokemonDetailsContainer = document.getElementById('pokemonDetailsContainer');
-    
+    const pokemonDetailsContent = document.getElementById('pokemonDetailsContent');
+
     const typesHtml = pokemonDetails.types.map(type => {
         const typeClassName = `type type-${type.type.name}`;
         return `<span class="${typeClassName}">${type.type.name}</span>`;
@@ -45,7 +46,12 @@ function displayPokemonDetails(pokemonDetails) {
     `;
 
     pokemonDetailsContainer.innerHTML = detailHtml;
+    pokemonDetailsContent.classList.add(`type-${pokemonDetails.types[0].type.name}`);
+    
+    
 }
+
+
 
 
 
